@@ -1,0 +1,159 @@
+.page-hero {
+    padding: 70px 5.7% 44px;
+    background: #10110e;
+    border-bottom: 1px solid var(--border);
+}
+
+.page-hero h1 {
+    margin: 6px 0 14px;
+    font-size: clamp(32px, 4.5vw, 54px);
+    line-height: 1.05;
+    font-weight: 900;
+    font-style: italic;
+    letter-spacing: -1.6px;
+}
+
+.page-hero h1 span {
+    color: var(--orange);
+}
+
+.page-hero > p:last-child {
+    max-width: 640px;
+    margin: 0;
+    color: var(--muted);
+    font-size: 15px;
+}
+
+/* INNHOLD */
+
+.innhold {
+    padding: 46px 5.7% 64px;
+}
+
+.innhold h2 {
+    margin: 34px 0 10px;
+    font-size: 22px;
+}
+
+.innhold h2:first-child {
+    margin-top: 0;
+}
+
+.innhold p,
+.innhold li {
+    color: #d5d4cc;
+    font-size: 15px;
+    line-height: 1.75;
+}
+
+.innhold p {
+    max-width: 760px;
+}
+
+.innhold ul {
+    max-width: 760px;
+    padding-left: 20px;
+}
+
+.innhold li {
+    margin-bottom: 6px;
+}
+
+.innhold strong {
+    color: var(--text);
+}
+
+.merknad {
+    margin-top: 28px;
+    padding: 14px 18px;
+    border-left: 3px solid var(--orange);
+    background: var(--surface);
+    color: var(--muted) !important;
+    font-size: 13px !important;
+}
+
+/* TABELL */
+
+.tabell {
+    width: 100%;
+    max-width: 760px;
+    margin: 18px 0 6px;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.tabell th,
+.tabell td {
+    padding: 11px 14px;
+    border: 1px solid var(--border);
+    text-align: left;
+}
+
+.tabell th {
+    background: var(--surface);
+    color: var(--orange);
+    font-size: 12px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
+.tabell tbody tr:nth-child(even) td {
+    background: #111310;
+}
+
+/* TIDSLINJE */
+
+.tidslinje {
+    list-style: none;
+    max-width: 760px;
+    margin: 22px 0 0;
+    padding: 0 0 0 24px;
+    border-left: 2px solid var(--border);
+}
+
+.tidslinje li {
+    position: relative;
+    padding: 0 0 24px;
+}
+
+.tidslinje li:last-child {
+    padding-bottom: 0;
+}
+
+.tidslinje li::before {
+    content: "";
+    position: absolute;
+    left: -31px;
+    top: 7px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--orange);
+}
+
+.tidslinje b {
+    display: block;
+    color: var(--orange);
+    font-size: 13px;
+    letter-spacing: 0.5px;
+}
+
+.tidslinje h3 {
+    margin: 2px 0 4px;
+    font-size: 17px;
+}
+
+.tidslinje p {
+    margin: 0;
+}
+
+
+@media (max-width: 700px) {
+    .page-hero {
+        padding: 50px 5% 34px;
+    }
+
+    .innhold {
+        padding: 34px 5% 48px;
+    }
+}

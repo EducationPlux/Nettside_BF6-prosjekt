@@ -1,157 +1,4 @@
-:root {
-    --bg: #0c0d0b;
-    --surface: #151713;
-    --surface-hover: #24271f;
-    --text: #f3f0e8;
-    --muted: #aaa99f;
-    --orange: #f47b20;
-    --border: #34352e;
-    --military: #25291f;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 90px;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background: var(--bg);
-    color: var(--text);
-    font-family: "Monda", "Segoe UI", Arial, sans-serif;
-    line-height: 1.6;
-}
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-a:focus-visible {
-    outline: 2px solid var(--orange);
-    outline-offset: 5px;
-}
-
-::selection {
-    background: var(--orange);
-    color: #111;
-}
-
-.navbar {
-    position: relative;
-    z-index: 20;
-    min-height: 76px;
-    padding: 16px 5.7%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 28px;
-    background: #090a08;
-    border-bottom: 1px solid var(--border);
-}
-
-.logo {
-    display: inline-block;
-    color: var(--text);
-    font-size: 20px;
-    font-weight: 900;
-    font-style: italic;
-    letter-spacing: -1px;
-    white-space: nowrap;
-}
-
-.logo b {
-    margin-left: 4px;
-    color: var(--orange);
-    font-size: 1.25em;
-}
-
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-}
-
-.nav-links > a,
-.dropdown > a {
-    display: inline-block;
-    color: #d5d4cc;
-    font-size: 13px;
-    transition: color 0.2s ease;
-    white-space: nowrap;
-}
-
-.nav-links > a:hover,
-.dropdown > a:hover,
-.nav-links .active {
-    color: var(--orange);
-}
-
-.nav-button {
-    padding: 11px 18px;
-    border-radius: 3px;
-    background: var(--orange);
-    color: #111;
-    font-size: 12px;
-    font-weight: 800;
-    white-space: nowrap;
-    transition: background 0.2s ease, transform 0.2s ease;
-}
-
-.nav-button:hover,
-.btn-primary:hover {
-    background: #ff9b48;
-    transform: translateY(-2px);
-}
-
-/* DROPDOWN MENU */
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: calc(100% + 12px);
-    left: 0;
-    min-width: 190px;
-    margin: 0;
-    padding: 6px;
-    list-style: none;
-    background: #171914;
-    border: 1px solid var(--border);
-    border-radius: 4px;
-    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
-}
-
-.dropdown:hover .dropdown-menu,
-.dropdown:focus-within .dropdown-menu {
-    display: block;
-}
-
-.dropdown-menu li {
-    width: 100%;
-}
-
-.dropdown-menu a {
-    display: block;
-    padding: 10px 12px;
-    border-radius: 3px;
-    color: var(--text);
-    font-size: 13px;
-}
-
-.dropdown-menu a:hover {
-    background: var(--surface-hover);
-    color: var(--orange);
-}
+/* HERO */
 
 .hero {
     min-height: 470px;
@@ -177,15 +24,6 @@ a:focus-visible {
     position: relative;
     z-index: 1;
     max-width: 570px;
-}
-
-.eyebrow {
-    margin: 0 0 12px;
-    color: var(--orange);
-    font-size: 12px;
-    font-weight: 800;
-    letter-spacing: 1.7px;
-    text-transform: uppercase;
 }
 
 .hero h1 {
@@ -221,6 +59,8 @@ a:focus-visible {
     margin-top: 26px;
 }
 
+/* KNAPPER */
+
 .btn {
     display: inline-flex;
     align-items: center;
@@ -240,6 +80,11 @@ a:focus-visible {
     color: #111;
 }
 
+.btn-primary:hover {
+    background: #ff9b48;
+    transform: translateY(-2px);
+}
+
 .btn-secondary {
     border-color: #74746b;
     background: rgba(12, 13, 11, 0.4);
@@ -251,6 +96,7 @@ a:focus-visible {
     color: var(--orange);
 }
 
+/* FUNKSJONER */
 
 .features {
     display: grid;
@@ -297,6 +143,7 @@ a:focus-visible {
     font-size: 11px;
 }
 
+/* NYHETER */
 
 .nyheter-seksjon {
     padding: 48px 5.7% 55px;
@@ -327,8 +174,7 @@ a:focus-visible {
     white-space: nowrap;
 }
 
-.seksjon-overskrift > a:hover,
-.footer > a:last-child:hover {
+.seksjon-overskrift > a:hover {
     color: #ffb06b;
 }
 
@@ -405,40 +251,9 @@ a:focus-visible {
     font-size: 13px;
 }
 
-
-.footer {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 25px 5.7%;
-    border-top: 1px solid var(--border);
-    background: #090a08;
-    color: var(--muted);
-    font-size: 12px;
-}
-
-.footer p {
-    margin: 0;
-}
-
-.footer > a:last-child {
-    color: var(--orange);
-}
-
+/* RESPONSIVT – forside */
 
 @media (max-width: 1050px) {
-    .navbar {
-        align-items: flex-start;
-    }
-
-    .nav-links {
-        justify-content: flex-end;
-        flex-wrap: wrap;
-        gap: 14px 18px;
-    }
-
     .features {
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 22px 0;
@@ -458,31 +273,6 @@ a:focus-visible {
 }
 
 @media (max-width: 700px) {
-    .navbar {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 16px;
-        padding: 17px 5%;
-    }
-
-    .nav-links {
-        justify-content: flex-start;
-        gap: 12px 18px;
-    }
-
-    .nav-links > a,
-    .dropdown > a {
-        font-size: 12px;
-    }
-
-    .nav-button {
-        display: inline-block;
-    }
-
-    .dropdown-menu {
-        top: calc(100% + 5px);
-    }
-
     .hero {
         min-height: 440px;
         padding: 48px 5%;
@@ -539,13 +329,6 @@ a:focus-visible {
 
     .seksjon-overskrift > a {
         font-size: 11px;
-    }
-
-    .footer {
-        align-items: flex-start;
-        flex-direction: column;
-        gap: 10px;
-        padding: 24px 5%;
     }
 }
 
