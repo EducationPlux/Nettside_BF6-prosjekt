@@ -1,6 +1,6 @@
 # Battlefield Hub – skoleprosjekt
 
-Norsk fanside om Battlefield 6 for ungdom fra 16 til 20 år. Bygget med HTML og CSS uten rammeverk.
+Norsk fanside om Battlefield 6 vg2. Bygget med HTML og CSS uten rammeverk.
 
 ## Åpne
 Åpne mappen i VS Code, høyreklikk på BF6.html og velg «Open with Live Server». HTML-filen kan også åpnes direkte i nettleseren.

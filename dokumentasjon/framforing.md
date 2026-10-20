@@ -2,7 +2,7 @@
 
 Vis nettsiden mens du forklarer. Øv på å bruke egne ord i stedet for å lese et manus.
 
-1. **Tema og målgruppe:** Battlefield 6, for norsk ungdom fra 16 til 20 år. Vis hvordan besøkende finner fram.
+1. **Tema og målgruppe:** Battlefield 6, vg2. Vis hvordan besøkende finner fram.
 2. **Design:** Vis moodboardet og forklar valget av mørke flater, lys tekst og oransje detaljer.
 3. **Wireframe:** Sammenlign skissene med nettsiden. Skissene er laget under videreutviklingen, ikke før all koding.
 4. **HTML:** Forklar `header`, `nav`, `main`, `section` og `footer`. Vis et bilde og forklar hva `alt` brukes til.
