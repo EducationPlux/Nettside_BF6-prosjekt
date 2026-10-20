@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="nb">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,37 +7,38 @@
         <meta name="description" content="Om skoleprosjektet bak Battlefield 6-fansiden.">
 
         <!-- Favicon -->
-        <link rel="icon" type="image/x-icon" href="https://www.freelogovectors.net/wp-content/uploads/2026/05/battlefield-6-logo-icon-freelogovectors.net_-180x114.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="https://www.freelogovectors.net/wp-content/uploads/2026/05/battlefield-6-logo-icon-freelogovectors.net_-180x114.png">
+        <link rel="icon" href="bilder/favicon.ico" sizes="any">
+        <link rel="icon" type="image/png" sizes="32x32" href="bilder/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="bilder/favicon-16x16.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="bilder/apple-touch-icon.png">
 
         <title>Om prosjektet | Battlefield Hub</title>
         <link rel="stylesheet" href="base.css">
         <link rel="stylesheet" href="underside.css">
     </head>
     <body>
+    <a class="skip-link" href="#main-content">Hopp til innhold</a>
         <header class="navbar">
-            <a href="BF6.html" class="logo">BATTLEFIELD <b>6</b></a>
+            <a href="BF6.html" class="logo"><img src="bilder/bf6-logo.svg" alt="Battlefield Hub – BF6, hjem" width="310" height="64"></a>
 
             <nav class="nav-links" aria-label="Hovedmeny">
                 <a href="BF6.html#home">Hjem</a>
                 <a href="BF6.html#nyheter">Nyheter</a>
-                <a href="BF6.html#konkurransedyktig">Flerspiller</a>
+                <a href="BF6.html#competitive">Flerspiller</a>
                 <a href="https://store.steampowered.com/app/2807960/Battlefield_6/" target="_blank" rel="noopener noreferrer">Community</a>
 
-                <div class="dropdown">
-                    <a href="#" class="dropdown-toggle" aria-haspopup="true">Om BF6 ▾</a>
+                <details class="dropdown"><summary class="dropdown-toggle">Om BF6</summary>
                     <ul class="dropdown-menu">
                         <li><a href="Hva-Er-BF6.html">Hva er Battlefield 6?</a></li>
                         <li><a href="BF6-Historikk.html">Battlefield-historikk</a></li>
                         <li><a href="Om-bf6.html">Om prosjektet</a></li>
-                    </ul>
-                </div>
+                    </ul></details>
 
                 <a class="nav-button" href="https://www.ea.com/games/battlefield/battlefield-6" target="_blank" rel="noopener noreferrer">Se Battlefield 6</a>
             </nav>
         </header>
 
-        <main>
+        <main id="main-content" tabindex="-1">
             <section class="page-hero">
                 <p class="eyebrow">SKOLEPROSJEKT</p>
                 <h1>Om <span>prosjektet</span></h1>
@@ -66,18 +67,21 @@
 
                 <h2>Kilder</h2>
                 <ul>
-                    <li>Electronic Arts – offisiell nettside for Battlefield.</li>
-                    <li>Steam – spillside for Battlefield 6.</li>
-                    <li>Counter-Strike / Steam Community for eksterne lenker i menyen.</li>
+                    <li><a href="https://www.ea.com/games/battlefield/battlefield-6">EA – offisiell nettside for Battlefield 6</a>.</li>
+                    <li><a href="https://store.steampowered.com/app/2807960/Battlefield_6/">Steam – spillside for Battlefield 6</a>.</li>
+                    <li><a href="https://www.ea.com/games/battlefield/battlefield-6/news/battlefield-6-campaign">EA – Your first look at Battlefield 6’s Single Player Campaign</a>. Brukt til historien og personbeskrivelsene. Lest 20. oktober 2026.</li>
+                    <li><a href="https://www.ea.com/games/battlefield/battlefield-6/features/global-scale-campaign">EA – Single Player Campaign</a>. Kilde til de fem personbildene. Lest 20. oktober 2026.</li>
                 </ul>
 
-                <p class="merknad">Alt tekstinnhold er skrevet av meg. Bildene brukes kun i en skolesammenheng.</p>
+                <p class="merknad">Historien og personbeskrivelsene bygger på informasjon fra EA og er forkortet og formulert på norsk med hjelp fra KI. Personbildene og bildene på forsiden tilhører EA / Battlefield. <a href="dokumentasjon/kilder.md">Fullstendige bildelenker og kilder</a>.</p>
+                <h2>Designdokumentasjon</h2>
+                <p><a href="dokumentasjon/design.html">Se wireframe, moodboard, fargepalett og fontvalg</a>.</p>
             </article>
         </main>
 
         <footer class="footer">
-            <a href="BF6.html" class="logo">BATTLEFIELD <b>6</b></a>
-            <p>Battlefield 6 Fanside</p>
+            <a href="BF6.html" class="logo"><img src="bilder/bf6-logo.svg" alt="Battlefield Hub – BF6, hjem" width="310" height="64"></a>
+            <p>Battlefield 6</p>
             <a href="https://www.ea.com/games/battlefield/battlefield-6" target="_blank" rel="noopener noreferrer">Besøk Battlefield →</a>
         </footer>
     </body>

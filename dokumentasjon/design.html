@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Design og planlegging | Battlefield Hub</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+<header>
+    <p class="label">BATTLEFIELD HUB · SKOLEPROSJEKT</p>
+    <h1>Design og planlegging</h1>
+    <p>Målgruppe: norsk ungdom fra 16 til 20 år.</p>
+    <p>Dette dokumentet er laget under videreutviklingen av nettsiden. Skissene viser strukturen som brukes nå, og er ikke opprinnelige skisser fra før kodingen.</p>
+    <nav aria-label="Dokumentasjon"><a href="#wireframe">Wireframe</a><a href="#moodboard">Moodboard</a><a href="#farger">Farger</a><a href="#font">Font</a><a href="../BF6.html">Til nettsiden →</a></nav>
+</header>
+<main>
+<section id="wireframe">
+    <p class="label">01 / STRUKTUR</p><h2>Wireframe</h2>
+    <p>Forsiden gir en kort introduksjon. Menyen fører videre til informasjon om spillet, historikken og prosjektet. På mobil flyttes innholdet under hverandre.</p>
+    <div class="skisser">
+        <figure><div class="skisse desktop">
+            <div class="rad"><span>LOGO</span><span>HJEM · NYHETER · OM BF6</span></div>
+            <div class="hero"><strong>SPILLETS NAVN</strong><p>Kort introduksjon + bakgrunnsbilde</p><span class="knapp">UTFORSK</span> <span class="knapp">LES MER</span></div>
+            <div class="kolonner fire"><span>Funksjon 1</span><span>Funksjon 2</span><span>Funksjon 3</span><span>Funksjon 4</span></div>
+            <h3>Nyheter</h3><div class="kolonner"><span>Bilde<br>Overskrift<br>Kort tekst</span><span>Bilde<br>Overskrift<br>Kort tekst</span><span>Bilde<br>Overskrift<br>Kort tekst</span></div>
+            <div class="rad"><span>LOGO</span><span>FOOTER / LENKER</span></div>
+        </div><figcaption>Forside på stor skjerm.</figcaption></figure>
+        <figure><div class="skisse mobil">
+            <div class="rad">LOGO</div><div class="rad">MENY SOM BRYTES OVER FLERE LINJER</div>
+            <div class="hero"><strong>SPILLETS NAVN</strong><p>Introduksjon + bilde</p><span class="knapp">UTFORSK</span></div>
+            <div class="kolonner to"><span>Funksjon 1</span><span>Funksjon 2</span><span>Funksjon 3</span><span>Funksjon 4</span></div>
+            <h3>Nyheter</h3><div class="kolonner en"><span>Bilde + tekst</span><span>Bilde + tekst</span><span>Bilde + tekst</span></div><div class="rad">FOOTER</div>
+        </div><figcaption>Forside på mobil. På de smaleste skjermene vises funksjonene også i én kolonne.</figcaption></figure>
+        <figure><div class="skisse desktop">
+            <div class="rad"><span>LOGO</span><span>FELLES MENY</span></div>
+            <div class="hero"><strong>HVA ER BATTLEFIELD 6?</strong><p>Kort introduksjon</p></div>
+            <div class="tekstblokk">SPILLBESKRIVELSE<br><br>HISTORIEN + KILDE</div>
+            <h3>Møt personene</h3><div class="kolonner to"><span>Portrett + navn + rolle + tekst</span><span>Portrett + navn + rolle + tekst</span><span>Portrett + navn + rolle + tekst</span><span>Portrett + navn + rolle + tekst</span><span>Portrett + navn + rolle + tekst</span></div>
+            <div class="tekstblokk">KILDER · KLASSER · KART · SPILLMODUSER</div><div class="rad">FOOTER</div>
+        </div><figcaption>Spillsiden. Personkortene vises i én kolonne på mobil. Historikk- og prosjektsiden bruker samme meny, tittelfelt og footer, men har tekst og lister i stedet for personkort.</figcaption></figure>
+    </div>
+</section>
+<section id="moodboard">
+    <p class="label">02 / STEMNING</p><h2>Moodboard</h2>
+    <p>Militærutstyr, mørke omgivelser og samarbeid er utgangspunktet. Bildene gir siden et alvorlig preg. Den oransje aksentfargen er valgt for å gjøre knapper og viktige detaljer synlige mot den mørke bakgrunnen.</p>
+    <div class="moodboard">
+        <figure><img src="../bilder/bf6-carter.jpg" alt="Haz Carter med rifle foran en bro"><figcaption>Retning: militærutstyr og tydelige former.</figcaption></figure>
+        <figure><img src="../bilder/bf6-murphy.jpg" alt="Dylan Murphy med eksplosjoner i bakgrunnen"><figcaption>Retning: action og sterke lyskontraster.</figcaption></figure>
+        <figure><img src="../bilder/bf6-gecko.jpg" alt="Simone Espina ser gjennom våpensiktet"><figcaption>Retning: fokus og nærbilder av personene.</figcaption></figure>
+        <figure><img src="../bilder/bf6-hemlock.jpg" alt="Lucas Hemlock med maske foran ansiktet"><figcaption>Retning: mørke flater og en alvorlig stemning.</figcaption></figure>
+    </div>
+    <p class="kilde">Bilder: EA / Battlefield, <a href="https://www.ea.com/games/battlefield/battlefield-6/features/global-scale-campaign">offisiell kampanjeside</a>. Lest 20. oktober 2026. Direkte bildelenker finnes i <a href="kilder.md">kilder.md</a>.</p>
+</section>
+<section id="farger">
+    <p class="label">03 / FARGER</p><h2>Fargepalett</h2>
+    <p>Paletten viser fargene som allerede brukes i CSS. De passer til stemningen i bildene, men er manuelt valgt og ikke hentet automatisk fra bildet.</p>
+    <div class="palett">
+        <div><span style="background:#0c0d0b"></span><strong>#0C0D0B</strong><p>Bakgrunn</p></div>
+        <div><span style="background:#151713"></span><strong>#151713</strong><p>Kort og flater</p></div>
+        <div><span style="background:#25291f"></span><strong>#25291F</strong><p>Militærgrønn</p></div>
+        <div><span style="background:#f47b20"></span><strong>#F47B20</strong><p>Knapper og detaljer</p></div>
+        <div><span style="background:#f3f0e8"></span><strong>#F3F0E8</strong><p>Hovedtekst</p></div>
+        <div><span style="background:#aaa99f"></span><strong>#AAA99F</strong><p>Sekundær tekst</p></div>
+    </div>
+    <p>Lys tekst gjør det lettere å lese på de mørke flatene. Oransje brukes i mindre mengder for å trekke oppmerksomheten mot lenker og knapper.</p>
+    <p>De seks fargene er også lagt inn som en egendefinert palett i <a href="https://color.adobe.com/create/color-wheel">Adobe Color</a>, med navnet «Battlefield Hub BF6». Paletten er eksportert direkte fra Adobe Color 20. oktober 2026.</p>
+    <p><a href="bf6-adobe-color.ase" download>Last ned Adobe Color-paletten (.ase)</a>, eller bruk <a href="bf6-palett.aco" download>ACO-versjonen (.aco)</a>. Importer filen i Photoshop via panelet Fargeprøver / Swatches → Importer fargeprøver.</p>
+    <figure><img src="adobe-color.png" alt="Adobe Color med paletten Battlefield Hub BF6 og de seks fargekodene" style="max-width:100%;width:600px;height:auto"><figcaption>Skjermbilde av den ferdige paletten i Adobe Color.</figcaption></figure>
+</section>
+<section id="font">
+    <p class="label">04 / TYPOGRAFI</p><h2>Valg av font</h2>
+    <p>Nettsiden bruker Segoe UI, med Arial og sans-serif som alternativer. Segoe UI finnes på Windows og har enkle bokstavformer som passer til menyer og lengre tekst. Hvis den ikke finnes på enheten, velger nettleseren neste font i listen.</p>
+    <div class="fontprove"><h3>Store slagmarker. Tydelig lagspill.</h3><p>Battlefield 6 kombinerer kjøretøy, infanteri og samarbeid.</p><p>Æ Ø Å æ ø å · 0123456789</p></div>
+    <p>Overskriftene bruker fet skrift. På de store sidetitlene brukes også kursiv for å gi et mer actionpreget uttrykk. Brødteksten har vanlig skriftvekt og linjeavstand på 1,6–1,75, slik at den er lettere å lese.</p>
+    <p>Fontlisten i CSS: <code>font-family: "Segoe UI", Arial, sans-serif;</code>. Logoen bruker fet Arial for et enkelt og kompakt uttrykk.</p>
+</section>
+</main>
+<footer>Dokumentasjon for skoleprosjekt · Utarbeidet med KI-hjelp · 20. oktober 2026</footer>
+</body>
+</html>

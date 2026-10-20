@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 310 64" role="img" aria-labelledby="title desc">
+  <title id="title">Battlefield Hub – BF6</title>
+  <desc id="desc">Et oransje sikte med tallet seks, ved siden av navnet Battlefield Hub.</desc>
+  <g fill="none" stroke="#f47b20" stroke-width="3">
+    <path d="M23 8H12v11M41 8h11v11M52 45v11H41M23 56H12V45"/>
+    <path d="M32 2v12M32 50v12M2 32h12M50 32h12"/>
+  </g>
+  <path fill="#f47b20" d="M42 18H27l-7 9v19h22V30H28v-4h14zM28 37h6v3h-6z"/>
+  <text x="78" y="30" fill="#f3f0e8" font-family="Arial, sans-serif" font-size="25" font-weight="900" letter-spacing="-1">BATTLEFIELD</text>
+  <text x="80" y="51" fill="#f47b20" font-family="Arial, sans-serif" font-size="12" font-weight="700" letter-spacing="4">HUB / BF6</text>
+</svg>

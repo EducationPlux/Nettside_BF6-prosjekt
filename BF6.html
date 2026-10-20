@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="no">
+<html lang="nb">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +7,19 @@
     <meta name="description" content="En Battlefield 6 inspirert fanside med nyheter, kart og informasjon.">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="https://www.freelogovectors.net/wp-content/uploads/2026/05/battlefield-6-logo-icon-freelogovectors.net_-180x114.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://www.freelogovectors.net/wp-content/uploads/2026/05/battlefield-6-logo-icon-freelogovectors.net_-180x114.png">
+    <link rel="icon" href="bilder/favicon.ico" sizes="any">
+        <link rel="icon" type="image/png" sizes="32x32" href="bilder/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="bilder/favicon-16x16.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="bilder/apple-touch-icon.png">
     
-    <title>BF6 6 | Battlefield Hub</title>
+    <title>Battlefield 6 | Battlefield Hub</title>
     <link rel="stylesheet" href="base.css">
     <link rel="stylesheet" href="forside.css">
 </head>
 <body>
+    <a class="skip-link" href="#main-content">Hopp til innhold</a>
     <header class="navbar">
-        <a href="#home" class="logo">BATTLEFIELD <b>6</b></a>
+        <a href="#home" class="logo"><img src="bilder/bf6-logo.svg" alt="Battlefield Hub – BF6, hjem" width="310" height="64"></a>
 
         <nav class="nav-links" aria-label="Hovedmeny">
             <a class="active" href="#home">Hjem</a>
@@ -24,20 +27,18 @@
             <a href="#competitive">Flerspiller</a>
             <a href="https://store.steampowered.com/app/2807960/Battlefield_6/" target="_blank" rel="noopener noreferrer">Community</a>
 
-            <div class="dropdown">
-                <a href="#" class="dropdown-toggle" aria-haspopup="true">Om BF6 ▾</a>
+            <details class="dropdown"><summary class="dropdown-toggle">Om BF6</summary>
                 <ul class="dropdown-menu">
                     <li><a href="Hva-Er-BF6.html">Hva er Battlefield 6?</a></li>
                     <li><a href="BF6-Historikk.html">Battlefield-historikk</a></li>
                     <li><a href="Om-bf6.html">Om prosjektet</a></li>
-                </ul>
-            </div>
+                </ul></details>
 
             <a class="nav-button" href="https://www.ea.com/games/battlefield/battlefield-6" target="_blank" rel="noopener noreferrer">Se Battlefield 6</a>
         </nav>
     </header>
 
-    <main>
+    <main id="main-content" tabindex="-1">
         <!-- Seksjon 1: Hero -->
         <section class="hero" id="home">
             <div class="hero-content">
@@ -79,7 +80,7 @@
                 <span class="feature-icon" aria-hidden="true">▧</span>
                 <div>
                     <h3>Store slagmarker</h3>
-                    <p>Kjemp på varierte og dynamiske kart.</p>
+                    <p>Kjemp på varierte og dynamiske maps.</p>
                 </div>
             </article>
 
@@ -92,7 +93,7 @@
             </article>
         </section>
 
-        <!-- Seksjon 3: Nyheter -->
+<!-- Seksjon 3: Nyheter -->
         <section class="nyheter-seksjon" id="nyheter">
             <div class="seksjon-overskrift">
                 <div>
@@ -103,39 +104,48 @@
             </div>
 
             <div class="nyheter-grid">
-                <article class="nyheter-kort">
-                    <div class="nyheter-bilde kart-bilde" role="img" aria-label="Militært bykart"></div>
-                    <div class="nyheter-innhold">
-                        <p class="dato">KART OG MILJØER</p>
-                        <h3>Utforsk slagmarkene</h3>
-                        <p>Oppdag varierte omgivelser og nye taktiske muligheter.</p>
-                    </div>
-                </article>
+                <!-- Kort 1: Maps -->
+                <a href="https://www.ea.com/games/battlefield/battlefield-6/features/maps" class="nyheter-kort-lenke" target="_blank" rel="noopener noreferrer">
+                    <article class="nyheter-kort">
+                        <div class="nyheter-bilde kart-bilde" role="img" aria-label="Helikoptre og jagerfly over et fjellandskap"></div>
+                        <div class="nyheter-innhold">
+                            <p class="dato">MAPS</p>
+                            <h3>Utforsk maps</h3>
+                            <p>Oppdag varierte maps og nye taktiske muligheter.</p>
+                        </div>
+                    </article>
+                </a>
 
-                <article class="nyheter-kort">
-                    <div class="nyheter-bilde handling-bilde" role="img" aria-label="Soldater i kamp"></div>
-                    <div class="nyheter-innhold">
-                        <p class="dato">SPILLMEKANIKK</p>
-                        <h3>Intens kamp</h3>
-                        <p>Bruk strategi, presisjon og samarbeid for å lykkes.</p>
-                    </div>
-                </article>
+                <!-- Kort 2: Spillmekanikk -->
+                <a href="https://www.ea.com/games/battlefield/battlefield-6/onboarding-hub" class="nyheter-kort-lenke" target="_blank" rel="noopener noreferrer">
+                    <article class="nyheter-kort">
+                        <div class="nyheter-bilde handling-bilde" role="img" aria-label="Soldater i kamp"></div>
+                        <div class="nyheter-innhold">
+                            <p class="dato">SPILLMEKANIKK</p>
+                            <h3>Intens kamp</h3>
+                            <p>Bruk strategi, presisjon og samarbeid for å lykkes.</p>
+                        </div>
+                    </article>
+                </a>
 
-                <article class="nyheter-kort">
-                    <div class="nyheter-bilde esport-bilde" role="img" aria-label="Lagbasert konkurranse"></div>
-                    <div class="nyheter-innhold">
-                        <p class="dato">FELLESSKAP</p>
-                        <h3>Kjemp sammen</h3>
-                        <p>Følg fellesskapet og del opplevelsen med laget ditt.</p>
-                    </div>
-                </article>
+                <!-- Kort 3: Fellesskap -->
+                <a href="https://www.ea.com/games/battlefield/battlefield-6" class="nyheter-kort-lenke" target="_blank" rel="noopener noreferrer">
+                    <article class="nyheter-kort">
+                        <div class="nyheter-bilde esport-bilde" role="img" aria-label="Lagbasert konkurranse"></div>
+                        <div class="nyheter-innhold">
+                            <p class="dato">FELLESSKAP</p>
+                            <h3>Kjemp sammen</h3>
+                            <p>Følg fellesskapet og del opplevelsen med laget ditt.</p>
+                        </div>
+                    </article>
+                </a>
             </div>
         </section>
     </main>
 
     <footer class="footer">
-        <a href="#home" class="logo">BATTLEFIELD <b>6</b></a>
-        <p>Battlefield 6 Fanside</p>
+        <a href="#home" class="logo"><img src="bilder/bf6-logo.svg" alt="Battlefield Hub – BF6, hjem" width="310" height="64"></a>
+        <p>Battlefield 6</p>
         <a href="https://www.ea.com/games/battlefield/battlefield-6" target="_blank" rel="noopener noreferrer">Besøk Battlefield →</a>
     </footer>
 </body>

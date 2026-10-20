@@ -1,0 +1,104 @@
+{
+  "contrast": [
+    {
+      "page": "BF6.html",
+      "failures": [],
+      "minContrast": "5.56"
+    },
+    {
+      "page": "Hva-Er-BF6.html",
+      "failures": [],
+      "minContrast": "6.62"
+    },
+    {
+      "page": "BF6-Historikk.html",
+      "failures": [],
+      "minContrast": "6.92"
+    },
+    {
+      "page": "Om-bf6.html",
+      "failures": [],
+      "minContrast": "6.92"
+    },
+    {
+      "page": "dokumentasjon/design.html",
+      "failures": [],
+      "minContrast": "6.97"
+    }
+  ],
+  "reflow": [
+    {
+      "page": "BF6.html",
+      "width": 320,
+      "mainFocusable": "-1",
+      "menu": true,
+      "overflow": false
+    },
+    {
+      "page": "Hva-Er-BF6.html",
+      "width": 320,
+      "mainFocusable": "-1",
+      "menu": true,
+      "overflow": false
+    },
+    {
+      "page": "BF6-Historikk.html",
+      "width": 320,
+      "mainFocusable": "-1",
+      "menu": true,
+      "overflow": false
+    },
+    {
+      "page": "Om-bf6.html",
+      "width": 320,
+      "mainFocusable": "-1",
+      "menu": true,
+      "overflow": false
+    },
+    {
+      "page": "dokumentasjon/design.html",
+      "width": 320,
+      "mainFocusable": null,
+      "overflow": false
+    },
+    {
+      "page": "BF6.html",
+      "width": 640,
+      "mainFocusable": "-1",
+      "menu": true,
+      "overflow": false
+    },
+    {
+      "page": "Hva-Er-BF6.html",
+      "width": 640,
+      "mainFocusable": "-1",
+      "menu": true,
+      "overflow": false
+    },
+    {
+      "page": "BF6-Historikk.html",
+      "width": 640,
+      "mainFocusable": "-1",
+      "menu": true,
+      "overflow": false
+    },
+    {
+      "page": "Om-bf6.html",
+      "width": 640,
+      "mainFocusable": "-1",
+      "menu": true,
+      "overflow": false
+    },
+    {
+      "page": "dokumentasjon/design.html",
+      "width": 640,
+      "mainFocusable": null,
+      "overflow": false
+    }
+  ],
+  "notes": [
+    "Contrast uses computed foreground and ancestor background colors; images/gradients require visual checks.",
+    "640px reflow corresponds to content width at 200% zoom on 1280px; browser zoom was not verified.",
+    "No screen reader audio test performed."
+  ]
+}
